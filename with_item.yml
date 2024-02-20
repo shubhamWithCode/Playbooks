@@ -2,7 +2,7 @@
 - hosts: webservers
   become: true
   tasks:
-  - name: Create multiple directories
+  - name: Create multiple directories/folders
     file: path={{item}} state=directory
     with_items:
     - '/home/vn1'
